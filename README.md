@@ -349,6 +349,7 @@ with `net/http` can be used with chi's mux.
 | [Heartbeat]            | Monitoring endpoint to check the servers pulse                          |
 | [Logger]               | Logs the start and end of each request with the elapsed processing time |
 | [NoCache]              | Sets response headers to prevent clients from caching                   |
+| [PerKeyRateLimit]      | Rate-limits requests per caller key (e.g. API key) with LRU-bounded buckets |
 | [Profiler]             | Easily attach net/http/pprof to your routers                            |
 | [ClientIPFromHeader]   | Capture client IP from a trusted single-IP header (X-Real-IP, CF-Connecting-IP, ...) |
 | [ClientIPFromXFF]      | Capture client IP from X-Forwarded-For, skipping listed trusted CIDR prefixes |
@@ -379,6 +380,8 @@ with `net/http` can be used with chi's mux.
 [Heartbeat]: https://pkg.go.dev/github.com/go-chi/chi/middleware#Heartbeat
 [Logger]: https://pkg.go.dev/github.com/go-chi/chi/middleware#Logger
 [NoCache]: https://pkg.go.dev/github.com/go-chi/chi/middleware#NoCache
+[PerKeyRateLimit]: https://pkg.go.dev/github.com/go-chi/chi/middleware#PerKeyRateLimit
+[PerKeyOpts]: https://pkg.go.dev/github.com/go-chi/chi/middleware#PerKeyOpts
 [Profiler]: https://pkg.go.dev/github.com/go-chi/chi/middleware#Profiler
 [ClientIPFromHeader]: https://pkg.go.dev/github.com/go-chi/chi/middleware#ClientIPFromHeader
 [ClientIPFromXFF]: https://pkg.go.dev/github.com/go-chi/chi/middleware#ClientIPFromXFF
